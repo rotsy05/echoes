@@ -1,0 +1,59 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-section--globe {
+  padding-top: var(--nav-height);
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.home-section--how,
+.home-section--record,
+.home-section--latest {
+  background: var(--deep);
+}
+
+.section-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1.25rem;
+}
+
+.home-headline {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.home-headline em {
+  font-style: italic;
+  color: var(--teal);
+}
+
+.home-subhead {
+  font-size: 1.125rem;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.7;
+}
